@@ -1,6 +1,6 @@
 #include "bzh_dell_smm_io_codes.h"
 #include "bzh_dell_smm_io_drv_fun.h"
-
+#include <pch.h>
 #include <iostream>
 using namespace std;
 
