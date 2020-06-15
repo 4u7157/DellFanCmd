@@ -145,14 +145,14 @@ int main(int argc, char* argv[])
             if (setFansTo100)
             {
                 cout << "Setting fan 1 speed to maximum...\n";
-                result = dell_smm_io_set_fan_lv(DELL_SMM_IO_FAN1, DELL_SMM_IO_FAN_LV2);
+                result = dell_smm_io_set_fan_lv(DELL_SMM_IO_FAN1, DELL_SMM_IO_FAN_LV1);
                 if (result == -1)
                 {
                     cerr << "Failed.\n";
                 }
 
                 cout << "Setting fan 2 speed to maximum...\n";
-                result = dell_smm_io_set_fan_lv(DELL_SMM_IO_FAN2, DELL_SMM_IO_FAN_LV2);
+                result = dell_smm_io_set_fan_lv(DELL_SMM_IO_FAN2, DELL_SMM_IO_FAN_LV1);
                 if (result == -1)
                 {
                     cerr << "Failed.  (Maybe your system just has one fan?)\n";
